@@ -4,49 +4,49 @@ import { INPUT_VALUE } from "../fixtures/inputValue";
 import { EXPECTED_VALUE } from "../fixtures/expectedValue";
 
 describe("Registration form: negative tests", () => {
-  it("Phone Number testing 1", () => {
+  it("First test for Phone Number validation", () => {
     expect(
       RegistrationForm.ValidatePhoneNumber(
         INPUT_VALUE.inputFirstNegativePhoneNumber
       )
-    ).to.be.eql(EXPECTED_VALUE.expectedFirstNegativePhoneNumber);
+    ).to.eql(EXPECTED_VALUE.expectedFirstNegativePhoneNumber);
   });
 
-  it("Phone Number testing 2", () => {
+  it("Second test for Phone Number validation", () => {
     expect(
       RegistrationForm.ValidatePhoneNumber(
         INPUT_VALUE.inputSecondNegativePhoneNumber
       )
-    ).to.be.eql(EXPECTED_VALUE.expectedSecondNegativePhoneNumber);
+    ).to.eql(EXPECTED_VALUE.expectedSecondNegativePhoneNumber);
   });
 
-  it("Email testing 1", () => {
+  it("First test for Email validation", () => {
     expect(
       RegistrationForm.ValidateEmail(INPUT_VALUE.inputFirstNegativeEmail)
-    ).to.be.eql(EXPECTED_VALUE.expectedFirstNegativeEmail);
+    ).to.eql(EXPECTED_VALUE.expectedFirstNegativeEmail);
   });
 
-  it("Email testing 2", () => {
+  it("Second test for Email validation", () => {
     expect(
       RegistrationForm.ValidateEmail(INPUT_VALUE.inputSecondNegativeEmail)
-    ).to.be.eql(EXPECTED_VALUE.expectedSecondNegativeEmail);
+    ).to.eql(EXPECTED_VALUE.expectedSecondNegativeEmail);
   });
 
-  it("Password testing 1", () => {
+  it("First test for Password validation", () => {
     expect(
       RegistrationForm.ValidatePassword(INPUT_VALUE.inputFirstNegativePassword)
-    ).to.be.eql(EXPECTED_VALUE.expectedFirstNegativePassword);
+    ).to.eql(EXPECTED_VALUE.expectedFirstNegativePassword);
   });
 
-  it("Password testing 2", () => {
+  it("Second test for Password validation", () => {
     expect(
       RegistrationForm.ValidatePassword(INPUT_VALUE.inputSecondNegativePassword)
-    ).to.be.eql(EXPECTED_VALUE.expectedSecondNegativePassword);
+    ).to.eql(EXPECTED_VALUE.expectedSecondNegativePassword);
   });
 
-  it("Password testing 3", () => {
+  it("Third test for Password validation", () => {
     expect(
       RegistrationForm.ValidatePassword(INPUT_VALUE.inputThirdNegativePassword)
-    ).to.be.eql(EXPECTED_VALUE.expectedThirdNegativePassword);
+    ).to.eql(EXPECTED_VALUE.expectedThirdNegativePassword);
   });
 });

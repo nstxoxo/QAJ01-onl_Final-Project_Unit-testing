@@ -3,50 +3,50 @@ import { expect } from "chai";
 import { INPUT_VALUE } from "../fixtures/inputValue";
 import { EXPECTED_VALUE } from "../fixtures/expectedValue";
 
-describe("Testing the registration form: positive", () => {
-  it("Phone Number testing 1", () => {
+describe("Registration form: positive tests", () => {
+  it("First test for Phone Number validation", () => {
     expect(
       RegistrationForm.ValidatePhoneNumber(
         INPUT_VALUE.inputFirstPositivePhoneNumber
       )
-    ).to.be.eql(EXPECTED_VALUE.expectedFirstPositivePhoneNumber);
+    ).to.eql(EXPECTED_VALUE.expectedFirstPositivePhoneNumber);
   });
 
-  it("Phone Number testing 2", () => {
+  it("Second test for Phone Number validation", () => {
     expect(
       RegistrationForm.ValidatePhoneNumber(
         INPUT_VALUE.inputSecondPositivePhoneNumber
       )
-    ).to.be.eql(EXPECTED_VALUE.expectedSecondPositivePhoneNumber);
+    ).to.eql(EXPECTED_VALUE.expectedSecondPositivePhoneNumber);
   });
 
-  it("Email testing 1", () => {
+  it("First test for Email validation", () => {
     expect(
       RegistrationForm.ValidateEmail(INPUT_VALUE.inputFirstPositiveEmail)
-    ).to.be.eql(EXPECTED_VALUE.expectedFirstPositiveEmail);
+    ).to.eql(EXPECTED_VALUE.expectedFirstPositiveEmail);
   });
 
-  it("Email testing 2", () => {
+  it("First test for Email validation", () => {
     expect(
       RegistrationForm.ValidateEmail(INPUT_VALUE.inputSecondPositiveEmail)
-    ).to.be.eql(EXPECTED_VALUE.expectedSecondPositiveEmail);
+    ).to.eql(EXPECTED_VALUE.expectedSecondPositiveEmail);
   });
 
-  it("Password testing 1", () => {
+  it("First test for Password validation", () => {
     expect(
       RegistrationForm.ValidatePassword(INPUT_VALUE.inputFirstPositivePassword)
-    ).to.be.eql(EXPECTED_VALUE.expectedFirstPositivePassword);
+    ).to.eql(EXPECTED_VALUE.expectedFirstPositivePassword);
   });
 
-  it("Password testing 2", () => {
+  it("Second test for Password validation", () => {
     expect(
       RegistrationForm.ValidatePassword(INPUT_VALUE.inputSecondPositivePassword)
-    ).to.be.eql(EXPECTED_VALUE.expectedSecondPositivePassword);
+    ).to.eql(EXPECTED_VALUE.expectedSecondPositivePassword);
   });
 
-  it("Password testing 3", () => {
+  it("Third test for Password validation", () => {
     expect(
       RegistrationForm.ValidatePassword(INPUT_VALUE.inputThirdPositivePassword)
-    ).to.be.eql(EXPECTED_VALUE.expectedThirdPositivePassword);
+    ).to.eql(EXPECTED_VALUE.expectedThirdPositivePassword);
   });
 });
